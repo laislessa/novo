@@ -12,3 +12,6 @@ uvicorn main:app --reload
 .\env\Scripts\activate
 
 python main.py
+ <br>
+ 
+ thunder client adicionar extensao
