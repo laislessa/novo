@@ -32,6 +32,18 @@ async def post_curso(post: Post):
    posts[id] = post
    return posts
 
+@app.delete('/posts/{post_id}')
+def deletar_post(post_id : int): 
+    try:
+        del posts[post_id]
+        return {"msg":"post deletado"}
+    except KeyError:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                    detail = 'Post inexistente.')
+@app.put('/posts/{post_id}')
+def atualizar_post(post_id : int, post: Post):
+    posts[post_id] = post
+    return{"msg" : " post atualizado"}
 if __name__ == '__main__':
     import uvicorn
     uvicorn.run("main:app",
