@@ -1,9 +1,12 @@
 # novo
 
  python -m venv env   
+ <br>
  .\env\Scripts\activate
+  <br>
 pip install fastapi
-pip install uvicorn
+ <br>
+pip install uvicorn <br>
 uvicorn main:app --reload 
 <br>
 .\env\Scripts\activate
