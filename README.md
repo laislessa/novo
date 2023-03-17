@@ -5,3 +5,7 @@
 pip install fastapi
 pip install uvicorn
 uvicorn main:app --reload 
+<br>
+.\env\Scripts\activate
+
+python main.py
