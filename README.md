@@ -2,6 +2,8 @@
 
  python -m venv env   
  <br>
+ Set-ExecutionPolicy Unrestricted -Scope Process 
+ <br>
  .\env\Scripts\activate
   <br>
 pip install fastapi
